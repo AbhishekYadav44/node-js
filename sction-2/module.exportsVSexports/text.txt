@@ -1,0 +1,46 @@
+
+
+console.log(module)
+// it return 
+// {
+//   id: '.',
+//   path: 'E:\\nodejs-course\\sction-2\\module.exportsVSexports',
+//   exports: {},
+//   filename: 'E:\\nodejs-course\\sction-2\\module.exportsVSexports\\app.js',
+//   loaded: false,
+//   children: [],
+//   paths: [
+//     'E:\\nodejs-course\\sction-2\\module.exportsVSexports\\node_modules',
+//     'E:\\nodejs-course\\sction-2\\node_modules',
+//     'E:\\nodejs-course\\node_modules',
+//     'E:\\node_modules'
+//   ],
+//   [Symbol(kIsMainSymbol)]: true,
+//   [Symbol(kIsCachedByESMLoader)]: false,
+//   [Symbol(kURL)]: undefined,
+//   [Symbol(kFormat)]: undefined,
+//   [Symbol(kIsExecuting)]: true
+
+
+
+//->>  yha se hham dekh sakkte h ki exports ek object h mdule  object ke nadar so module.exports === exports  so we can use exports at the place 
+// of module.exports
+
+
+
+
+
+//  summary
+
+console.log(module.exports === exports)   true;  abhi ye dono same obj ko pint kr rhe h 
+
+but
+
+if i do 
+exports = {
+    sum,
+    mol
+}
+
+now if i chec 
+console.log(module.exports === exports)  it will reutrn false;  due to assignment opeator .  ab ye dono alag lag obj ko point kr rh eh 
